@@ -1,0 +1,17 @@
+<script>
+if (location.href.includes("?file=")) {
+let file = location.href.replace("https://api.raajern.dk?file=","").replace("https://api.raajern.dk/?file=","")
+location.href = `https://api.raajern.dk/files${file}`
+}
+
+// Facebook redirect
+if(location.href.includes("?fb")) {
+location.href = "https://www.facebook.com/Raajern-106172618401639"
+}
+
+// Messenger redirect
+if(location.href.includes("?m")) {
+location.href = "https://www.messenger.com/t/106172618401639"
+}
+
+</script>
